@@ -1,8 +1,23 @@
 //funcion rafc
-import React from 'react'
+//import { Fragment } from 'react'
 
-export const  FirstApp = () => {
+// const newMessage = {
+//   message: 'Hola Mundo',
+//   title: 'Jose Antonio'
+// };
+
+const getResult = () => {
+  return 4 + 4;
+}
+
+export const FirstApp = () => {
+
+
   return (
-    <div>First App</div>
+    <>
+      <h1>{getResult()}</h1>
+      {/* <code>{ JSON.stringify(newMessage) }</code> */}
+      <p>soy un subtitulo.</p>
+    </>
   );
 }
