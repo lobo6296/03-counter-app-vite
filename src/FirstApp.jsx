@@ -10,14 +10,15 @@ const getResult = () => {
   return 4 + 4;
 }
 
-export const FirstApp = () => {
+export const FirstApp = ( {title, subTitle} ) => {
 
+  //console.log(props)
 
   return (
     <>
-      <h1>{getResult()}</h1>
+      <h1>{ title }</h1>
       {/* <code>{ JSON.stringify(newMessage) }</code> */}
-      <p>soy un subtitulo.</p>
+      <p>{subTitle+2}</p>
     </>
   );
 }
